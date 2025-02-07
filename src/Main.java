@@ -1,15 +1,29 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+System.out.println("Hello and welcome!\n");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        int vi = 2;
+        double vd = 2.3;
+        char vc ='A';
+        String cad = "hola";
+        System.out.println("vi: "+ vi + " vd: " +vd);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingresa un entero: ");
+        vi = sc.nextInt();
+        System.out.println("El numero que has ingresado es: "+vi);
+
+        if(vi % 2 == 0){
+            System.out.println("El numero " + vi + " es par");
+        }else{
+            System.out.println("El numero " + vi + " es impar");
+        }
+        if(vi > 50){
+            System.out.println("El numero " + vi + " es mayor que 50");
+        }else{
+            System.out.println("El numero " + vi + " es menor que 50");
         }
     }
 }
