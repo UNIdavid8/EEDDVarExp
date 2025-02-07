@@ -32,14 +32,17 @@ System.out.println("Hello and welcome!\n");
         switch(vc){
 
             case 'R':
+                case 'r':
                 System.out.print("El color es RED");
                 break;
 
                 case 'G':
+                case 'g':
                         System.out.print("El color es GREEN");
                     break;
 
                     case 'B':
+                    case 'b':
                         System.out.print("El color es BLUE");
                         break;
                         default:
