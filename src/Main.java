@@ -25,5 +25,25 @@ System.out.println("Hello and welcome!\n");
         }else{
             System.out.println("El numero " + vi + " es menor que 50");
         }
+        System.out.println("introduzca un color: (R,G,B)");
+        cad = sc.next();
+        vc = cad.charAt(0);
+
+        switch(vc){
+
+            case 'R':
+                System.out.print("El color es RED");
+                break;
+
+                case 'G':
+                        System.out.print("El color es GREEN");
+                    break;
+
+                    case 'B':
+                        System.out.print("El color es BLUE");
+                        break;
+                        default:
+                            System.out.print("El color es ERRONEO");
+        }
     }
 }
