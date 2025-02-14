@@ -2,8 +2,34 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //Sobrecarga de operadores, el operador se comporta diferente según sus operandos
+        String texto;
+        texto = "Hola";
+        String d;
+        d = "David Manuel";
+        texto = texto+  " "+d;
 
-                System.out.printf("Hello and welcome");
+        String escrito = texto.substring(3,4);
+        System.out.println(escrito);
+        System.out.println(texto);
+
+        System.exit(0);
+
+        int a  = 1;
+        int b  = 2;
+        System.out.println(" a = " +a+ " b = " +b);
+        a++;//POSTINCREMENTO
+        ++b;//PREINCREMENTO
+        System.out.println(" a = " +a+ " b = " +b);
+        int c = a++ * ++b;
+        System.out.println(" a = " +a+ " b = " +b+ " c = " +c);
+        //precedencia de operadores () ++ -- */% +- <<==!=
+        boolean bo = (2+123) < ++a || 2 + 5 * 9 == a++ + 43;
+        System.out.println(" a = " +a+ " b = " +b+ " c = " +c+ " bo = " +bo);
+        bo = ++a < 10 | ++a == 6;
+        System.out.println(" a = " +a+ " b = " +b+ " c = " +c+ " bo = " +bo);
+
+                System.out.println("Hello and welcome");
                 int vi = 2;
                 double vd = 2.3;
                 char vc = 'A';
@@ -15,7 +41,7 @@ public class Main {
 
                 //Boolianos
                 boolean vb=false;
-                vi=(int) 2.9 +1;//Con el int se hace una conversion, del numero a la derecha y no redondea.
+                vi=(int) 2.9 +1;//Con el int se hace una conversion, del número a la derecha y no redondea.
                 //Formas de arreglar si los dos son decimales.
                 vi=(int) 2.9 +(int)1.1;
                 vi=(int)(2.9 + 1.2);
@@ -24,7 +50,7 @@ public class Main {
 
                 vi= vc +1;// Daria 66 ya que en la tabla Asci "A"=65;(Unicode)
                 System.out.println("vi (entero): "+ vi + "vi (char): " +(char)vi);
-                System.exit(0);
+
 
 
                 Scanner sc= new Scanner(System.in);
@@ -82,9 +108,13 @@ public class Main {
                 }
                 System.out.println("Suma1:" +suma1 +"suma2" + suma2);
 
-                // Bucle while cuando no es conocido a priori el numero de interacciones.
-                // Bucle que solicite numeros al usuario hasta que introduzca un numero par.
+                // Bucle while cuando no es conocido a priori el número de interacciones.
+                // Bucle que solicite numeros al usuario hasta que introduzca un úmero par.
                 int num=sc.nextInt();
                 while(num%2 !=0);
-                            }
-        }
+
+
+
+
+    }
+}
